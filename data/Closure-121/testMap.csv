@@ -1,0 +1,8 @@
+TestNo,TestName
+1,com.google.javascript.jscomp.jsonml.SecureCompilerTest
+2,com.google.javascript.jscomp.MultiPassTest
+3,com.google.javascript.jscomp.CompilerTest
+4,com.google.javascript.jscomp.InlineVariablesConstantsTest
+5,com.google.javascript.jscomp.InlineVariablesTest
+6,com.google.javascript.jscomp.IntegrationTest
+7,com.google.javascript.jscomp.CommandLineRunnerTest

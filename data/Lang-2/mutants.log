@@ -1,0 +1,184 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):89:str == null |==> false
+2:COR:str.contains("#"):TRUE:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):92:str.contains("#") |==> false
+3:COR:str.contains("#"):FALSE:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):92:str.contains("#") |==> true
+4:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):96:2 |==> 0
+5:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):96:2 |==> -2
+6:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):96:len < 2 |==> len != 2
+7:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):96:len < 2 |==> len <= 2
+8:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):96:len < 2 |==> false
+9:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):99:0 |==> 1
+10:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):99:0 |==> -1
+11:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):100:ch0 == '_' |==> ch0 <= '_'
+12:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):100:ch0 == '_' |==> ch0 >= '_'
+13:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):100:ch0 == '_' |==> false
+14:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):101:3 |==> 0
+15:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):101:3 |==> -3
+16:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):101:len < 3 |==> len != 3
+17:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):101:len < 3 |==> len <= 3
+18:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):101:len < 3 |==> false
+19:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):104:1 |==> 0
+20:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):104:1 |==> -1
+21:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):105:2 |==> 0
+22:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):105:2 |==> -2
+23:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):106:!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2) |==> !Character.isUpperCase(ch1) != !Character.isUpperCase(ch2)
+24:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):106:!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2) |==> !Character.isUpperCase(ch1)
+25:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):106:!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2) |==> !Character.isUpperCase(ch2)
+26:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):106:!Character.isUpperCase(ch1) || !Character.isUpperCase(ch2) |==> true
+27:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):109:3 |==> 0
+28:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):109:3 |==> -3
+29:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):109:len == 3 |==> len <= 3
+30:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):109:len == 3 |==> len >= 3
+31:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):109:len == 3 |==> false
+32:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):110:1 |==> 0
+33:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):110:1 |==> -1
+34:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):110:3 |==> 0
+35:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):110:3 |==> -3
+36:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):112:5 |==> 0
+37:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):112:5 |==> -5
+38:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):112:len < 5 |==> len != 5
+39:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):112:len < 5 |==> len <= 5
+40:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):112:len < 5 |==> false
+41:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):115:3 |==> 0
+42:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):115:3 |==> -3
+43:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):115:str.charAt(3) != '_' |==> str.charAt(3) < '_'
+44:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):115:str.charAt(3) != '_' |==> str.charAt(3) > '_'
+45:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):115:str.charAt(3) != '_' |==> true
+46:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:1 |==> 0
+47:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:1 |==> -1
+48:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:3 |==> 0
+49:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:3 |==> -3
+50:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:4 |==> 0
+51:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):118:4 |==> -4
+52:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):120:1 |==> 0
+53:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):120:1 |==> -1
+54:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):121:!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1) |==> !Character.isLowerCase(ch0) != !Character.isLowerCase(ch1)
+55:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):121:!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1) |==> !Character.isLowerCase(ch0)
+56:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):121:!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1) |==> !Character.isLowerCase(ch1)
+57:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):121:!Character.isLowerCase(ch0) || !Character.isLowerCase(ch1) |==> true
+58:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):124:2 |==> 0
+59:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):124:2 |==> -2
+60:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):124:len == 2 |==> len <= 2
+61:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):124:len == 2 |==> len >= 2
+62:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):124:len == 2 |==> false
+63:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):127:5 |==> 0
+64:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):127:5 |==> -5
+65:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):127:len < 5 |==> len != 5
+66:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):127:len < 5 |==> len <= 5
+67:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):127:len < 5 |==> false
+68:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):130:2 |==> 0
+69:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):130:2 |==> -2
+70:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):130:str.charAt(2) != '_' |==> str.charAt(2) < '_'
+71:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):130:str.charAt(2) != '_' |==> str.charAt(2) > '_'
+72:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):130:str.charAt(2) != '_' |==> true
+73:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):133:3 |==> 0
+74:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):133:3 |==> -3
+75:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):134:ch3 == '_' |==> ch3 <= '_'
+76:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):134:ch3 == '_' |==> ch3 >= '_'
+77:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):134:ch3 == '_' |==> false
+78:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:0 |==> 1
+79:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:0 |==> -1
+80:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:2 |==> 0
+81:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:2 |==> -2
+82:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:4 |==> 0
+83:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):135:4 |==> -4
+84:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):137:4 |==> 0
+85:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):137:4 |==> -4
+86:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):138:!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4) |==> !Character.isUpperCase(ch3) != !Character.isUpperCase(ch4)
+87:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):138:!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4) |==> !Character.isUpperCase(ch3)
+88:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):138:!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4) |==> !Character.isUpperCase(ch4)
+89:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):138:!Character.isUpperCase(ch3) || !Character.isUpperCase(ch4) |==> true
+90:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):141:5 |==> 0
+91:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):141:5 |==> -5
+92:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):141:len == 5 |==> len <= 5
+93:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):141:len == 5 |==> len >= 5
+94:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):141:len == 5 |==> false
+95:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:0 |==> 1
+96:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:0 |==> -1
+97:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:2 |==> 0
+98:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:2 |==> -2
+99:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:3 |==> 0
+100:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:3 |==> -3
+101:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:5 |==> 0
+102:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):142:5 |==> -5
+103:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):144:7 |==> 0
+104:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):144:7 |==> -7
+105:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):144:len < 7 |==> len != 7
+106:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):144:len < 7 |==> len <= 7
+107:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):144:len < 7 |==> false
+108:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):147:5 |==> 0
+109:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):147:5 |==> -5
+110:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):147:str.charAt(5) != '_' |==> str.charAt(5) < '_'
+111:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):147:str.charAt(5) != '_' |==> str.charAt(5) > '_'
+112:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):147:str.charAt(5) != '_' |==> true
+113:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:0 |==> 1
+114:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:0 |==> -1
+115:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:2 |==> 0
+116:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:2 |==> -2
+117:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:3 |==> 0
+118:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:3 |==> -3
+119:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:5 |==> 0
+120:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:5 |==> -5
+121:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:6 |==> 0
+122:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@toLocale(java.lang.String):150:6 |==> -6
+123:LVR:POS:0:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):190:4 |==> 0
+124:LVR:POS:NEG:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):190:4 |==> -4
+125:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):191:locale != null |==> true
+126:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):192:list.add(locale) |==> <NO-OP>
+127:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):193:0 |==> 1
+128:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):193:0 |==> -1
+129:ROR:>(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):193:locale.getVariant().length() > 0 |==> locale.getVariant().length() != 0
+130:ROR:>(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):193:locale.getVariant().length() > 0 |==> locale.getVariant().length() >= 0
+131:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):193:locale.getVariant().length() > 0 |==> false
+132:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):194:list.add(new Locale(locale.getLanguage(), locale.getCountry())) |==> <NO-OP>
+133:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):196:0 |==> 1
+134:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):196:0 |==> -1
+135:ROR:>(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):196:locale.getCountry().length() > 0 |==> locale.getCountry().length() != 0
+136:ROR:>(int,int):>=(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):196:locale.getCountry().length() > 0 |==> locale.getCountry().length() >= 0
+137:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):196:locale.getCountry().length() > 0 |==> false
+138:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):197:list.add(new Locale(locale.getLanguage(), "")) |==> <NO-OP>
+139:LVR:FALSE:TRUE:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):199:false |==> true
+140:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):199:list.contains(defaultLocale) == false |==> false
+141:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):199:list.contains(defaultLocale) == false |==> list.contains(defaultLocale)
+142:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):199:list.contains(defaultLocale) == false |==> false
+143:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@localeLookupList(java.util.Locale,java.util.Locale):200:list.add(defaultLocale) |==> <NO-OP>
+144:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):256:countryCode == null |==> false
+145:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):260:langs == null |==> false
+146:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):261:langs = new ArrayList<Locale>() |==> <NO-OP>
+147:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):263:0 |==> 1
+148:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):263:0 |==> -1
+149:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):263:i < locales.size() |==> i != locales.size()
+150:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):263:i < locales.size() |==> i <= locales.size()
+151:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):263:i < locales.size() |==> false
+152:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):265:countryCode.equals(locale.getCountry()) && locale.getVariant().isEmpty() |==> countryCode.equals(locale.getCountry()) == locale.getVariant().isEmpty()
+153:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):265:countryCode.equals(locale.getCountry()) && locale.getVariant().isEmpty() |==> false
+154:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):265:countryCode.equals(locale.getCountry()) && locale.getVariant().isEmpty() |==> countryCode.equals(locale.getCountry())
+155:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):266:countryCode.equals(locale.getCountry()) && locale.getVariant().isEmpty() |==> locale.getVariant().isEmpty()
+156:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):267:langs.add(locale) |==> <NO-OP>
+157:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):270:langs = Collections.unmodifiableList(langs) |==> <NO-OP>
+158:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):271:cLanguagesByCountry.putIfAbsent(countryCode, langs) |==> <NO-OP>
+159:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@languagesByCountry(java.lang.String):272:langs = cLanguagesByCountry.get(countryCode) |==> <NO-OP>
+160:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):288:languageCode == null |==> false
+161:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):292:countries == null |==> false
+162:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):293:countries = new ArrayList<Locale>() |==> <NO-OP>
+163:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):295:0 |==> 1
+164:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):295:0 |==> -1
+165:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):295:i < locales.size() |==> i != locales.size()
+166:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):295:i < locales.size() |==> i <= locales.size()
+167:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):295:i < locales.size() |==> false
+168:LVR:0:POS:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:0 |==> 1
+169:LVR:0:NEG:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:0 |==> -1
+170:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:locale.getCountry().length() != 0 |==> locale.getCountry().length() < 0
+171:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:locale.getCountry().length() != 0 |==> locale.getCountry().length() > 0
+172:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:locale.getCountry().length() != 0 |==> true
+173:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):297:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 |==> languageCode.equals(locale.getLanguage()) == (locale.getCountry().length() != 0)
+174:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):297:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 |==> false
+175:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):297:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 |==> languageCode.equals(locale.getLanguage())
+176:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 |==> locale.getCountry().length() != 0
+177:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):297:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 && locale.getVariant().isEmpty() |==> (languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0) == locale.getVariant().isEmpty()
+178:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):298:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 && locale.getVariant().isEmpty() |==> false
+179:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):297:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 && locale.getVariant().isEmpty() |==> languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0
+180:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):299:languageCode.equals(locale.getLanguage()) && locale.getCountry().length() != 0 && locale.getVariant().isEmpty() |==> locale.getVariant().isEmpty()
+181:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):300:countries.add(locale) |==> <NO-OP>
+182:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):303:countries = Collections.unmodifiableList(countries) |==> <NO-OP>
+183:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):304:cCountriesByLanguage.putIfAbsent(languageCode, countries) |==> <NO-OP>
+184:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.LocaleUtils@countriesByLanguage(java.lang.String):305:countries = cCountriesByLanguage.get(languageCode) |==> <NO-OP>

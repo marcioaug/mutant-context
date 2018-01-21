@@ -1,0 +1,17 @@
+TestNo,TestName
+1,com.google.javascript.jscomp.SanityCheckTest
+2,com.google.javascript.jscomp.DenormalizeTest
+3,com.google.javascript.jscomp.GatherRawExportsTest
+4,com.google.javascript.jscomp.SourceMapTest
+5,com.google.javascript.jscomp.ConstCheckTest
+6,com.google.javascript.jscomp.CollapseAnonymousFunctionsTest
+7,com.google.javascript.jscomp.ExternExportsPassTest
+8,com.google.javascript.jscomp.NormalizeTest
+9,com.google.javascript.jscomp.RenamePropertiesTest
+10,com.google.javascript.jscomp.InlineVariablesConstantsTest
+11,com.google.javascript.jscomp.CheckRequiresForConstructorsTest
+12,com.google.javascript.jscomp.FunctionInjectorTest
+13,com.google.javascript.jscomp.InlineVariablesTest
+14,com.google.javascript.jscomp.CompilerRunnerTest
+15,com.google.javascript.jscomp.InlineFunctionsTest
+16,com.google.javascript.jscomp.CollapsePropertiesTest

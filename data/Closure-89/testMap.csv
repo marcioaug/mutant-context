@@ -1,0 +1,12 @@
+TestNo,TestName
+1,com.google.javascript.jscomp.GlobalNamespaceTest
+2,com.google.javascript.jscomp.SourceMap2Test
+3,com.google.javascript.jscomp.ProcessDefinesTest
+4,com.google.javascript.jscomp.SourceMapTest
+5,com.google.javascript.jscomp.RenamePropertiesTest
+6,com.google.javascript.jscomp.CheckRequiresForConstructorsTest
+7,com.google.javascript.jscomp.CheckGlobalNamesTest
+8,com.google.javascript.jscomp.NormalizeTest
+9,com.google.javascript.jscomp.ExternExportsPassTest
+10,com.google.javascript.jscomp.CommandLineRunnerTest
+11,com.google.javascript.jscomp.CollapsePropertiesTest

@@ -1,0 +1,5 @@
+TestNo,TestName
+1,com.google.javascript.jscomp.InlineObjectLiteralsTest
+2,com.google.javascript.jscomp.CompilerTest
+3,com.google.javascript.jscomp.IntegrationTest
+4,com.google.javascript.jscomp.CommandLineRunnerTest
