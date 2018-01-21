@@ -1,0 +1,413 @@
+1:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:75:primitiveWrapperMap.put(Boolean.TYPE, Boolean.class) |==> <NO-OP>
+2:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:76:primitiveWrapperMap.put(Byte.TYPE, Byte.class) |==> <NO-OP>
+3:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:77:primitiveWrapperMap.put(Character.TYPE, Character.class) |==> <NO-OP>
+4:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:78:primitiveWrapperMap.put(Short.TYPE, Short.class) |==> <NO-OP>
+5:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:79:primitiveWrapperMap.put(Integer.TYPE, Integer.class) |==> <NO-OP>
+6:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:80:primitiveWrapperMap.put(Long.TYPE, Long.class) |==> <NO-OP>
+7:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:81:primitiveWrapperMap.put(Double.TYPE, Double.class) |==> <NO-OP>
+8:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:82:primitiveWrapperMap.put(Float.TYPE, Float.class) |==> <NO-OP>
+9:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:83:primitiveWrapperMap.put(Void.TYPE, Void.TYPE) |==> <NO-OP>
+10:COR:primitiveClass.equals(wrapperClass):TRUE:org.apache.commons.lang3.ClassUtils:93:primitiveClass.equals(wrapperClass) |==> false
+11:COR:primitiveClass.equals(wrapperClass):FALSE:org.apache.commons.lang3.ClassUtils:93:primitiveClass.equals(wrapperClass) |==> true
+12:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:94:wrapperPrimitiveMap.put(wrapperClass, primitiveClass) |==> <NO-OP>
+13:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@addAbbreviation(java.lang.String,java.lang.String):116:abbreviationMap.put(primitive, abbreviation) |==> <NO-OP>
+14:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@addAbbreviation(java.lang.String,java.lang.String):117:reverseAbbreviationMap.put(abbreviation, primitive) |==> <NO-OP>
+15:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:124:addAbbreviation("int", "I") |==> <NO-OP>
+16:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:125:addAbbreviation("boolean", "Z") |==> <NO-OP>
+17:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:126:addAbbreviation("float", "F") |==> <NO-OP>
+18:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:127:addAbbreviation("long", "J") |==> <NO-OP>
+19:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:128:addAbbreviation("short", "S") |==> <NO-OP>
+20:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:129:addAbbreviation("byte", "B") |==> <NO-OP>
+21:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:130:addAbbreviation("double", "D") |==> <NO-OP>
+22:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils:131:addAbbreviation("char", "C") |==> <NO-OP>
+23:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.Object,java.lang.String):156:object == null |==> false
+24:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.Class<?>):169:cls == null |==> false
+25:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):184:className == null |==> false
+26:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):187:0 |==> 1
+27:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):187:0 |==> -1
+28:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):187:className.length() == 0 |==> className.length() <= 0
+29:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):187:className.length() == 0 |==> className.length() >= 0
+30:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):187:className.length() == 0 |==> false
+31:COR:className.startsWith("["):TRUE:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):194:className.startsWith("[") |==> false
+32:COR:className.startsWith("["):FALSE:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):194:className.startsWith("[") |==> true
+33:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):195:0 |==> 1
+34:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):195:0 |==> -1
+35:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):195:className.charAt(0) == '[' |==> className.charAt(0) <= '['
+36:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):195:className.charAt(0) == '[' |==> className.charAt(0) >= '['
+37:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):195:className.charAt(0) == '[' |==> false
+38:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):196:1 |==> 0
+39:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):196:1 |==> -1
+40:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):196:className = className.substring(1) |==> <NO-OP>
+41:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):197:arrayPrefix.append("[]") |==> <NO-OP>
+42:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:0 |==> 1
+43:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:0 |==> -1
+44:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' |==> className.charAt(0) <= 'L'
+45:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' |==> className.charAt(0) >= 'L'
+46:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' |==> false
+47:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:1 |==> 0
+48:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:1 |==> -1
+49:AOR:-(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.length() - 1 |==> className.length() % 1
+50:AOR:-(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.length() - 1 |==> className.length() * 1
+51:AOR:-(int,int):+(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.length() - 1 |==> className.length() + 1
+52:AOR:-(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.length() - 1 |==> className.length() / 1
+53:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) <= ';'
+54:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) >= ';'
+55:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(className.length() - 1) == ';' |==> false
+56:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(0) == 'L' == (className.charAt(className.length() - 1) == ';')
+57:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> false
+58:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(0) == 'L'
+59:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):200:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) == ';'
+60:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:1 |==> 0
+61:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:1 |==> -1
+62:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:1 |==> 0
+63:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:1 |==> -1
+64:AOR:-(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:className.length() - 1 |==> className.length() % 1
+65:AOR:-(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:className.length() - 1 |==> className.length() * 1
+66:AOR:-(int,int):+(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:className.length() - 1 |==> className.length() + 1
+67:AOR:-(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:className.length() - 1 |==> className.length() / 1
+68:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):201:className = className.substring(1, className.length() - 1) |==> <NO-OP>
+69:COR:reverseAbbreviationMap.containsKey(className):TRUE:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):205:reverseAbbreviationMap.containsKey(className) |==> false
+70:COR:reverseAbbreviationMap.containsKey(className):FALSE:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):205:reverseAbbreviationMap.containsKey(className) |==> true
+71:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):206:className = reverseAbbreviationMap.get(className) |==> <NO-OP>
+72:LVR:NEG:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:-1 |==> 0
+73:LVR:NEG:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:-1 |==> 1
+74:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx == -1 |==> lastDotIdx <= -1
+75:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx == -1 |==> lastDotIdx >= -1
+76:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx == -1 |==> false
+77:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:0 |==> 1
+78:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:0 |==> -1
+79:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:1 |==> 0
+80:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:1 |==> -1
+81:AOR:+(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx + 1 |==> lastDotIdx % 1
+82:AOR:+(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx + 1 |==> lastDotIdx * 1
+83:AOR:+(int,int):-(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx + 1 |==> lastDotIdx - 1
+84:AOR:+(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):211:lastDotIdx + 1 |==> lastDotIdx / 1
+85:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:1 |==> 0
+86:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:1 |==> -1
+87:AOR:+(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:lastDotIdx + 1 |==> lastDotIdx % 1
+88:AOR:+(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:lastDotIdx + 1 |==> lastDotIdx * 1
+89:AOR:+(int,int):-(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:lastDotIdx + 1 |==> lastDotIdx - 1
+90:AOR:+(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):212:lastDotIdx + 1 |==> lastDotIdx / 1
+91:LVR:NEG:0:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):213:-1 |==> 0
+92:LVR:NEG:POS:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):213:-1 |==> 1
+93:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):213:innerIdx != -1 |==> innerIdx < -1
+94:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):213:innerIdx != -1 |==> innerIdx > -1
+95:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):213:innerIdx != -1 |==> true
+96:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getShortClassName(java.lang.String):214:out = out.replace(INNER_CLASS_SEPARATOR_CHAR, PACKAGE_SEPARATOR_CHAR) |==> <NO-OP>
+97:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.Object,java.lang.String):229:object == null |==> false
+98:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.Class<?>):242:cls == null |==> false
+99:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className == null |==> false
+100:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:0 |==> 1
+101:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:0 |==> -1
+102:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className.length() == 0 |==> className.length() <= 0
+103:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className.length() == 0 |==> className.length() >= 0
+104:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className.length() == 0 |==> false
+105:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className == null || className.length() == 0 |==> className == null != (className.length() == 0)
+106:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className == null || className.length() == 0 |==> className == null
+107:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className == null || className.length() == 0 |==> className.length() == 0
+108:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):258:className == null || className.length() == 0 |==> true
+109:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):263:0 |==> 1
+110:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):263:0 |==> -1
+111:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):263:className.charAt(0) == '[' |==> className.charAt(0) <= '['
+112:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):263:className.charAt(0) == '[' |==> className.charAt(0) >= '['
+113:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):263:className.charAt(0) == '[' |==> false
+114:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):264:1 |==> 0
+115:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):264:1 |==> -1
+116:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):264:className = className.substring(1) |==> <NO-OP>
+117:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:0 |==> 1
+118:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:0 |==> -1
+119:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' |==> className.charAt(0) <= 'L'
+120:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' |==> className.charAt(0) >= 'L'
+121:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' |==> false
+122:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:1 |==> 0
+123:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:1 |==> -1
+124:AOR:-(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.length() - 1 |==> className.length() % 1
+125:AOR:-(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.length() - 1 |==> className.length() * 1
+126:AOR:-(int,int):+(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.length() - 1 |==> className.length() + 1
+127:AOR:-(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.length() - 1 |==> className.length() / 1
+128:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) <= ';'
+129:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) >= ';'
+130:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(className.length() - 1) == ';' |==> false
+131:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(0) == 'L' == (className.charAt(className.length() - 1) == ';')
+132:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> false
+133:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(0) == 'L'
+134:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):267:className.charAt(0) == 'L' && className.charAt(className.length() - 1) == ';' |==> className.charAt(className.length() - 1) == ';'
+135:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):268:1 |==> 0
+136:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):268:1 |==> -1
+137:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):268:className = className.substring(1) |==> <NO-OP>
+138:LVR:NEG:0:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):272:-1 |==> 0
+139:LVR:NEG:POS:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):272:-1 |==> 1
+140:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):272:i == -1 |==> i <= -1
+141:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):272:i == -1 |==> i >= -1
+142:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):272:i == -1 |==> false
+143:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):275:0 |==> 1
+144:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getPackageName(java.lang.String):275:0 |==> -1
+145:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getAllSuperclasses(java.lang.Class<?>):288:cls == null |==> false
+146:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getAllSuperclasses(java.lang.Class<?>):293:superclass != null |==> true
+147:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getAllSuperclasses(java.lang.Class<?>):294:classes.add(superclass) |==> <NO-OP>
+148:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getAllSuperclasses(java.lang.Class<?>):295:superclass = superclass.getSuperclass() |==> <NO-OP>
+149:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>):314:cls == null |==> false
+150:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>):319:getAllInterfaces(cls, interfacesFound) |==> <NO-OP>
+151:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>,java.util.HashSet<java.lang.Class<?>>):331:cls != null |==> true
+152:COR:interfacesFound.add(i):TRUE:org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>,java.util.HashSet<java.lang.Class<?>>):335:interfacesFound.add(i) |==> false
+153:COR:interfacesFound.add(i):FALSE:org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>,java.util.HashSet<java.lang.Class<?>>):335:interfacesFound.add(i) |==> true
+154:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>,java.util.HashSet<java.lang.Class<?>>):336:getAllInterfaces(i, interfacesFound) |==> <NO-OP>
+155:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getAllInterfaces(java.lang.Class<?>,java.util.HashSet<java.lang.Class<?>>):340:cls = cls.getSuperclass() |==> <NO-OP>
+156:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@convertClassNamesToClasses(java.util.List<java.lang.String>):359:classNames == null |==> false
+157:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@convertClassNamesToClasses(java.util.List<java.lang.String>):365:classes.add(Class.forName(className)) |==> <NO-OP>
+158:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@convertClassNamesToClasses(java.util.List<java.lang.String>):367:classes.add(null) |==> <NO-OP>
+159:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@convertClassesToClassNames(java.util.List<java.lang.Class<?>>):386:classes == null |==> false
+160:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@convertClassesToClassNames(java.util.List<java.lang.Class<?>>):391:cls == null |==> false
+161:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@convertClassesToClassNames(java.util.List<java.lang.Class<?>>):392:classNames.add(null) |==> <NO-OP>
+162:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@convertClassesToClassNames(java.util.List<java.lang.Class<?>>):394:classNames.add(cls.getName()) |==> <NO-OP>
+163:LVR:POS:0:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[]):439:1.5F |==> 0.0F
+164:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[]):439:1.5F |==> -1.5F
+165:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):475:false |==> true
+166:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):475:ArrayUtils.isSameLength(classArray, toClassArray) == false |==> false
+167:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):475:ArrayUtils.isSameLength(classArray, toClassArray) == false |==> ArrayUtils.isSameLength(classArray, toClassArray)
+168:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):475:ArrayUtils.isSameLength(classArray, toClassArray) == false |==> false
+169:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):476:false |==> true
+170:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):478:classArray == null |==> false
+171:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):479:classArray = ArrayUtils.EMPTY_CLASS_ARRAY |==> <NO-OP>
+172:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):481:toClassArray == null |==> false
+173:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):482:toClassArray = ArrayUtils.EMPTY_CLASS_ARRAY |==> <NO-OP>
+174:LVR:0:POS:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):484:0 |==> 1
+175:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):484:0 |==> -1
+176:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):484:i < classArray.length |==> i != classArray.length
+177:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):484:i < classArray.length |==> i <= classArray.length
+178:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):484:i < classArray.length |==> false
+179:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):485:false |==> true
+180:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):485:isAssignable(classArray[i], toClassArray[i], autoboxing) == false |==> false
+181:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):485:isAssignable(classArray[i], toClassArray[i], autoboxing) == false |==> isAssignable(classArray[i], toClassArray[i], autoboxing)
+182:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):485:isAssignable(classArray[i], toClassArray[i], autoboxing) == false |==> false
+183:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):486:false |==> true
+184:LVR:TRUE:FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>[],java.lang.Class<?>[],boolean):489:true |==> false
+185:LVR:POS:0:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>):524:1.5F |==> 0.0F
+186:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>):524:1.5F |==> -1.5F
+187:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):555:toClass == null |==> false
+188:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):556:false |==> true
+189:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):559:cls == null |==> false
+190:COR:autoboxing:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):563:autoboxing |==> false
+191:COR:autoboxing:FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):563:autoboxing |==> true
+192:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):564:cls.isPrimitive() && !toClass.isPrimitive() |==> cls.isPrimitive() == !toClass.isPrimitive()
+193:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):564:cls.isPrimitive() && !toClass.isPrimitive() |==> false
+194:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):564:cls.isPrimitive() && !toClass.isPrimitive() |==> cls.isPrimitive()
+195:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):564:cls.isPrimitive() && !toClass.isPrimitive() |==> !toClass.isPrimitive()
+196:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):565:cls = primitiveToWrapper(cls) |==> <NO-OP>
+197:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):566:cls == null |==> false
+198:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):567:false |==> true
+199:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):570:toClass.isPrimitive() && !cls.isPrimitive() |==> toClass.isPrimitive() == !cls.isPrimitive()
+200:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):570:toClass.isPrimitive() && !cls.isPrimitive() |==> false
+201:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):570:toClass.isPrimitive() && !cls.isPrimitive() |==> toClass.isPrimitive()
+202:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):570:toClass.isPrimitive() && !cls.isPrimitive() |==> !cls.isPrimitive()
+203:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):571:cls = wrapperToPrimitive(cls) |==> <NO-OP>
+204:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):572:cls == null |==> false
+205:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):573:false |==> true
+206:COR:cls.equals(toClass):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):577:cls.equals(toClass) |==> false
+207:COR:cls.equals(toClass):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):577:cls.equals(toClass) |==> true
+208:LVR:TRUE:FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):578:true |==> false
+209:COR:cls.isPrimitive():TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):580:cls.isPrimitive() |==> false
+210:COR:cls.isPrimitive():FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):580:cls.isPrimitive() |==> true
+211:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):581:false |==> true
+212:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):581:toClass.isPrimitive() == false |==> false
+213:ROR:==(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):581:toClass.isPrimitive() == false |==> toClass.isPrimitive()
+214:ROR:==(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):581:toClass.isPrimitive() == false |==> false
+215:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):582:false |==> true
+216:COR:Integer.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):584:Integer.TYPE.equals(cls) |==> false
+217:COR:Integer.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):584:Integer.TYPE.equals(cls) |==> true
+218:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):585:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass) != Float.TYPE.equals(toClass)
+219:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):585:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass)
+220:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):586:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass)
+221:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):586:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> true
+222:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):585:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> (Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)) != Double.TYPE.equals(toClass)
+223:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):585:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)
+224:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):587:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Double.TYPE.equals(toClass)
+225:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):587:Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> true
+226:COR:Long.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):589:Long.TYPE.equals(cls) |==> false
+227:COR:Long.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):589:Long.TYPE.equals(cls) |==> true
+228:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):590:Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass) != Double.TYPE.equals(toClass)
+229:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):590:Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass)
+230:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):591:Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Double.TYPE.equals(toClass)
+231:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):591:Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> true
+232:COR:Boolean.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):593:Boolean.TYPE.equals(cls) |==> false
+233:COR:Boolean.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):593:Boolean.TYPE.equals(cls) |==> true
+234:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):594:false |==> true
+235:COR:Double.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):596:Double.TYPE.equals(cls) |==> false
+236:COR:Double.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):596:Double.TYPE.equals(cls) |==> true
+237:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):597:false |==> true
+238:COR:Float.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):599:Float.TYPE.equals(cls) |==> false
+239:COR:Float.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):599:Float.TYPE.equals(cls) |==> true
+240:COR:Character.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):602:Character.TYPE.equals(cls) |==> false
+241:COR:Character.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):602:Character.TYPE.equals(cls) |==> true
+242:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) != Long.TYPE.equals(toClass)
+243:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass)
+244:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):604:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass)
+245:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):604:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> true
+246:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> (Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)) != Float.TYPE.equals(toClass)
+247:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)
+248:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):605:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass)
+249:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):605:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> true
+250:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> (Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)) != Double.TYPE.equals(toClass)
+251:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):603:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)
+252:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):606:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Double.TYPE.equals(toClass)
+253:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):606:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> true
+254:COR:Short.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):608:Short.TYPE.equals(cls) |==> false
+255:COR:Short.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):608:Short.TYPE.equals(cls) |==> true
+256:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) != Long.TYPE.equals(toClass)
+257:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass)
+258:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):610:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass)
+259:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):610:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> true
+260:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> (Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)) != Float.TYPE.equals(toClass)
+261:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)
+262:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):611:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass)
+263:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):611:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> true
+264:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> (Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)) != Double.TYPE.equals(toClass)
+265:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):609:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)
+266:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):612:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Double.TYPE.equals(toClass)
+267:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):612:Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> true
+268:COR:Byte.TYPE.equals(cls):TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):614:Byte.TYPE.equals(cls) |==> false
+269:COR:Byte.TYPE.equals(cls):FALSE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):614:Byte.TYPE.equals(cls) |==> true
+270:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) |==> Short.TYPE.equals(toClass) != Integer.TYPE.equals(toClass)
+271:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) |==> Short.TYPE.equals(toClass)
+272:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):616:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) |==> Integer.TYPE.equals(toClass)
+273:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):616:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) |==> true
+274:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> (Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass)) != Long.TYPE.equals(toClass)
+275:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass)
+276:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):617:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> Long.TYPE.equals(toClass)
+277:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):617:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) |==> true
+278:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> (Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)) != Float.TYPE.equals(toClass)
+279:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass)
+280:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):618:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> Float.TYPE.equals(toClass)
+281:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):618:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) |==> true
+282:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> (Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)) != Double.TYPE.equals(toClass)
+283:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):615:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass)
+284:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):619:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> Double.TYPE.equals(toClass)
+285:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):619:Short.TYPE.equals(toClass) || Integer.TYPE.equals(toClass) || Long.TYPE.equals(toClass) || Float.TYPE.equals(toClass) || Double.TYPE.equals(toClass) |==> true
+286:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isAssignable(java.lang.Class<?>,java.lang.Class<?>,boolean):622:false |==> true
+287:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):641:cls != null |==> true
+288:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):641:cls != null && cls.isPrimitive() |==> cls != null == cls.isPrimitive()
+289:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):641:cls != null && cls.isPrimitive() |==> false
+290:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):641:cls != null && cls.isPrimitive() |==> cls != null
+291:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):641:cls != null && cls.isPrimitive() |==> cls.isPrimitive()
+292:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@primitiveToWrapper(java.lang.Class<?>):642:convertedClass = primitiveWrapperMap.get(cls) |==> <NO-OP>
+293:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):658:classes == null |==> false
+294:LVR:0:POS:org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):662:0 |==> 1
+295:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):662:0 |==> -1
+296:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):662:classes.length == 0 |==> classes.length <= 0
+297:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):662:classes.length == 0 |==> classes.length >= 0
+298:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):662:classes.length == 0 |==> false
+299:LVR:0:POS:org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):667:0 |==> 1
+300:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):667:0 |==> -1
+301:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):667:i < classes.length |==> i != classes.length
+302:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):667:i < classes.length |==> i <= classes.length
+303:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):667:i < classes.length |==> false
+304:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@primitivesToWrappers(java.lang.Class<?>[]):668:convertedClasses[i] = primitiveToWrapper(classes[i]) |==> <NO-OP>
+305:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):708:classes == null |==> false
+306:LVR:0:POS:org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):712:0 |==> 1
+307:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):712:0 |==> -1
+308:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):712:classes.length == 0 |==> classes.length <= 0
+309:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):712:classes.length == 0 |==> classes.length >= 0
+310:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):712:classes.length == 0 |==> false
+311:LVR:0:POS:org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):717:0 |==> 1
+312:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):717:0 |==> -1
+313:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):717:i < classes.length |==> i != classes.length
+314:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):717:i < classes.length |==> i <= classes.length
+315:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):717:i < classes.length |==> false
+316:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@wrappersToPrimitives(java.lang.Class<?>[]):718:convertedClasses[i] = wrapperToPrimitive(classes[i]) |==> <NO-OP>
+317:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):733:cls == null |==> false
+318:LVR:FALSE:TRUE:org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):734:false |==> true
+319:LVR:0:POS:org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):736:0 |==> 1
+320:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):736:0 |==> -1
+321:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):736:cls.getName().indexOf(INNER_CLASS_SEPARATOR_CHAR) >= 0 |==> cls.getName().indexOf(INNER_CLASS_SEPARATOR_CHAR) == 0
+322:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):736:cls.getName().indexOf(INNER_CLASS_SEPARATOR_CHAR) >= 0 |==> cls.getName().indexOf(INNER_CLASS_SEPARATOR_CHAR) > 0
+323:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.ClassUtils@isInnerClass(java.lang.Class<?>):736:cls.getName().indexOf(INNER_CLASS_SEPARATOR_CHAR) >= 0 |==> true
+324:COR:abbreviationMap.containsKey(className):TRUE:org.apache.commons.lang3.ClassUtils@getClass(java.lang.ClassLoader,java.lang.String,boolean):755:abbreviationMap.containsKey(className) |==> false
+325:COR:abbreviationMap.containsKey(className):FALSE:org.apache.commons.lang3.ClassUtils@getClass(java.lang.ClassLoader,java.lang.String,boolean):755:abbreviationMap.containsKey(className) |==> true
+326:LVR:TRUE:FALSE:org.apache.commons.lang3.ClassUtils@getClass(java.lang.ClassLoader,java.lang.String):776:true |==> false
+327:LVR:TRUE:FALSE:org.apache.commons.lang3.ClassUtils@getClass(java.lang.String):790:true |==> false
+328:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getClass(java.lang.String,boolean):806:contextCL == null |==> false
+329:COR:Modifier.isPublic(declaredMethod.getDeclaringClass().getModifiers()):TRUE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):837:Modifier.isPublic(declaredMethod.getDeclaringClass().getModifiers()) |==> false
+330:COR:Modifier.isPublic(declaredMethod.getDeclaringClass().getModifiers()):FALSE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):837:Modifier.isPublic(declaredMethod.getDeclaringClass().getModifiers()) |==> true
+331:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):842:candidateClasses.addAll(getAllInterfaces(cls)) |==> <NO-OP>
+332:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):843:candidateClasses.addAll(getAllSuperclasses(cls)) |==> <NO-OP>
+333:COR:Modifier.isPublic(candidateClass.getModifiers()):TRUE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):846:Modifier.isPublic(candidateClass.getModifiers()) |==> false
+334:COR:Modifier.isPublic(candidateClass.getModifiers()):FALSE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):846:Modifier.isPublic(candidateClass.getModifiers()) |==> true
+335:COR:Modifier.isPublic(candidateMethod.getDeclaringClass().getModifiers()):TRUE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):855:Modifier.isPublic(candidateMethod.getDeclaringClass().getModifiers()) |==> false
+336:COR:Modifier.isPublic(candidateMethod.getDeclaringClass().getModifiers()):FALSE:org.apache.commons.lang3.ClassUtils@getPublicMethod(java.lang.Class<?>,java.lang.String,java.lang.Class<?>[]):855:Modifier.isPublic(candidateMethod.getDeclaringClass().getModifiers()) |==> true
+337:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):872:className = StringUtils.deleteWhitespace(className) |==> <NO-OP>
+338:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):873:className == null |==> false
+339:COR:className.endsWith("[]"):TRUE:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):875:className.endsWith("[]") |==> false
+340:COR:className.endsWith("[]"):FALSE:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):875:className.endsWith("[]") |==> true
+341:LVR:0:POS:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:0 |==> 1
+342:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:0 |==> -1
+343:LVR:POS:0:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:2 |==> 0
+344:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:2 |==> -2
+345:AOR:-(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:className.length() - 2 |==> className.length() % 2
+346:AOR:-(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:className.length() - 2 |==> className.length() * 2
+347:AOR:-(int,int):+(int,int):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:className.length() - 2 |==> className.length() + 2
+348:AOR:-(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:className.length() - 2 |==> className.length() / 2
+349:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):878:className = className.substring(0, className.length() - 2) |==> <NO-OP>
+350:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):879:classNameBuffer.append("[") |==> <NO-OP>
+351:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):882:abbreviation != null |==> true
+352:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):883:classNameBuffer.append(abbreviation) |==> <NO-OP>
+353:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):885:classNameBuffer.append("L").append(className).append(";") |==> <NO-OP>
+354:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toCanonicalName(java.lang.String):887:className = classNameBuffer.toString() |==> <NO-OP>
+355:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):903:array == null |==> false
+356:LVR:0:POS:org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):905:0 |==> 1
+357:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):905:0 |==> -1
+358:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):905:array.length == 0 |==> array.length <= 0
+359:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):905:array.length == 0 |==> array.length >= 0
+360:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):905:array.length == 0 |==> false
+361:LVR:0:POS:org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):909:0 |==> 1
+362:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):909:0 |==> -1
+363:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):909:i < array.length |==> i != array.length
+364:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):909:i < array.length |==> i <= array.length
+365:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):909:i < array.length |==> false
+366:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):910:array[i] == null |==> false
+367:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@toClass(java.lang.Object[]):910:classes[i] = array[i] == null ? null : array[i].getClass() |==> <NO-OP>
+368:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getShortCanonicalName(java.lang.Object,java.lang.String):926:object == null |==> false
+369:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getShortCanonicalName(java.lang.Class<?>):940:cls == null |==> false
+370:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getPackageCanonicalName(java.lang.Object,java.lang.String):970:object == null |==> false
+371:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getPackageCanonicalName(java.lang.Class<?>):984:cls == null |==> false
+372:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1021:className = StringUtils.deleteWhitespace(className) |==> <NO-OP>
+373:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1022:className == null |==> false
+374:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1025:0 |==> 1
+375:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1025:0 |==> -1
+376:STD:<INC>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1027:dim++ |==> <NO-OP>
+377:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1028:1 |==> 0
+378:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1028:1 |==> -1
+379:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1028:className = className.substring(1) |==> <NO-OP>
+380:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1030:1 |==> 0
+381:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1030:1 |==> -1
+382:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1030:dim < 1 |==> dim != 1
+383:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1030:dim < 1 |==> dim <= 1
+384:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1030:dim < 1 |==> false
+385:COR:className.startsWith("L"):TRUE:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1033:className.startsWith("L") |==> false
+386:COR:className.startsWith("L"):FALSE:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1033:className.startsWith("L") |==> true
+387:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1035:1 |==> 0
+388:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1035:1 |==> -1
+389:COR:className.endsWith(";"):TRUE:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1036:className.endsWith(";") |==> false
+390:COR:className.endsWith(";"):FALSE:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1036:className.endsWith(";") |==> true
+391:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:1 |==> 0
+392:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:1 |==> -1
+393:AOR:-(int,int):%(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:className.length() - 1 |==> className.length() % 1
+394:AOR:-(int,int):*(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:className.length() - 1 |==> className.length() * 1
+395:AOR:-(int,int):+(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:className.length() - 1 |==> className.length() + 1
+396:AOR:-(int,int):/(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1037:className.length() - 1 |==> className.length() / 1
+397:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1034:className = className.substring(1, className.endsWith(";") ? className.length() - 1 : className.length()) |==> <NO-OP>
+398:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1040:0 |==> 1
+399:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1040:0 |==> -1
+400:ROR:>(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1040:className.length() > 0 |==> className.length() != 0
+401:ROR:>(int,int):>=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1040:className.length() > 0 |==> className.length() >= 0
+402:ROR:>(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1040:className.length() > 0 |==> false
+403:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1041:0 |==> 1
+404:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1041:0 |==> -1
+405:LVR:POS:0:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1041:1 |==> 0
+406:LVR:POS:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1041:1 |==> -1
+407:STD:<ASSIGN>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1041:className = reverseAbbreviationMap.get(className.substring(0, 1)) |==> <NO-OP>
+408:LVR:0:POS:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1045:0 |==> 1
+409:LVR:0:NEG:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1045:0 |==> -1
+410:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1045:i < dim |==> i != dim
+411:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1045:i < dim |==> i <= dim
+412:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1045:i < dim |==> false
+413:STD:<CALL>:<NO-OP>:org.apache.commons.lang3.ClassUtils@getCanonicalName(java.lang.String):1046:canonicalClassNameBuffer.append("[]") |==> <NO-OP>
