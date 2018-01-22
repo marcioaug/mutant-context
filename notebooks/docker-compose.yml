@@ -1,0 +1,9 @@
+version: '3'
+services:
+  notebook:
+    image: marcioaug/anaconda
+    volumes:
+      - ..:/opt/src
+    ports:
+      - "8888:8888"
+    entrypoint: jupyter notebook --no-browser --notebook-dir=/opt/src --ip=0.0.0.0 --allow-root
