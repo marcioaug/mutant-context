@@ -261,7 +261,7 @@ c.NotebookApp.password = u'sha1:a98880b9cdd2:5fead295403e437cfacfbc2e794072ee9a6
 #
 #  Setting to an empty string disables authentication altogether, which is NOT
 #  RECOMMENDED.
-#c.NotebookApp.token = '<generated>'
+c.NotebookApp.token = '53d87919387b:94b84385600966b11d0db9f8409bed7ce7702619'
 
 ## Supply overrides for the tornado.web.Application that the Jupyter notebook
 #  uses.
