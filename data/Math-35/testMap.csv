@@ -1,0 +1,6 @@
+TestNo,TestName
+1,org.apache.commons.math3.genetics.TournamentSelectionTest
+2,org.apache.commons.math3.genetics.ElitisticListPopulationTest
+3,org.apache.commons.math3.genetics.FitnessCachingTest
+4,org.apache.commons.math3.genetics.GeneticAlgorithmTestBinary
+5,org.apache.commons.math3.genetics.GeneticAlgorithmTestPermutations

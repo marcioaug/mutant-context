@@ -3,5 +3,5 @@ TestNo,TestName
 2,com.google.javascript.jscomp.CheckRequiresForConstructorsTest
 3,com.google.javascript.jscomp.ScopedAliasesTest
 4,com.google.javascript.jscomp.SymbolTableTest
-5,com.google.javascript.jscomp.IntegrationTest
-6,com.google.javascript.jscomp.CommandLineRunnerTest
+5,com.google.javascript.jscomp.CommandLineRunnerTest
+6,com.google.javascript.jscomp.IntegrationTest

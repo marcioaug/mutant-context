@@ -1,13 +1,13 @@
 TestNo,TestName
 1,com.google.javascript.jscomp.InlineCostEstimatorTest
 2,com.google.javascript.jscomp.jsonml.SecureCompilerTest
-3,com.google.javascript.jscomp.SpecializeModuleTest$SpecializeModuleSpecializationStateTest
-4,com.google.javascript.jscomp.CompilerTest
+3,com.google.javascript.jscomp.CompilerTest
+4,com.google.javascript.jscomp.SpecializeModuleTest$SpecializeModuleSpecializationStateTest
 5,com.google.javascript.jscomp.SpecializeModuleTest
 6,com.google.javascript.jscomp.AliasKeywordsTest
 7,com.google.javascript.jscomp.FunctionRewriterTest
 8,com.google.javascript.jscomp.FunctionInjectorTest
 9,com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest
 10,com.google.javascript.jscomp.InlineFunctionsTest
-11,com.google.javascript.jscomp.IntegrationTest
-12,com.google.javascript.jscomp.CommandLineRunnerTest
+11,com.google.javascript.jscomp.CommandLineRunnerTest
+12,com.google.javascript.jscomp.IntegrationTest

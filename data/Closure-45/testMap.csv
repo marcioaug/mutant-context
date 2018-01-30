@@ -1,6 +1,6 @@
 TestNo,TestName
 1,com.google.javascript.jscomp.OptimizeCallsTest
-2,com.google.javascript.jscomp.jsonml.SecureCompilerTest
-3,com.google.javascript.jscomp.CompilerTest
+2,com.google.javascript.jscomp.CompilerTest
+3,com.google.javascript.jscomp.jsonml.SecureCompilerTest
 4,com.google.javascript.jscomp.RemoveUnusedVarsTest
 5,com.google.javascript.jscomp.CommandLineRunnerTest

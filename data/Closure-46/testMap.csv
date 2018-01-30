@@ -6,8 +6,8 @@ TestNo,TestName
 5,com.google.javascript.jscomp.parsing.JsDocInfoParserTest
 6,com.google.javascript.rhino.jstype.JSTypeTest
 7,com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest
-8,com.google.javascript.jscomp.NameAnalyzerTest
-9,com.google.javascript.jscomp.InlineFunctionsTest
+8,com.google.javascript.jscomp.InlineFunctionsTest
+9,com.google.javascript.jscomp.NameAnalyzerTest
 10,com.google.javascript.jscomp.PeepholeFoldConstantsTest
 11,com.google.javascript.jscomp.PureFunctionIdentifierTest
 12,com.google.javascript.jscomp.LooseTypeCheckTest

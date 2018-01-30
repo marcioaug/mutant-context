@@ -1,8 +1,8 @@
 TestNo,TestName
 1,com.google.javascript.jscomp.CreateSyntheticBlocksTest
 2,com.google.javascript.jscomp.ExpandJqueryAliasesTest
-3,com.google.javascript.jscomp.CompilerTest
-4,com.google.javascript.jscomp.PeepholeIntegrationTest
+3,com.google.javascript.jscomp.PeepholeIntegrationTest
+4,com.google.javascript.jscomp.CompilerTest
 5,com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest
 6,com.google.javascript.jscomp.IntegrationTest
 7,com.google.javascript.jscomp.CommandLineRunnerTest

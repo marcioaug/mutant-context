@@ -1,0 +1,3 @@
+TestNo,TestName
+1,org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest
+2,org.apache.commons.math.stat.correlation.PearsonsCorrelationTest

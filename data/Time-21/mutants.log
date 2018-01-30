@@ -1,0 +1,90 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getShortName(java.util.Locale,java.lang.String,java.lang.String):44:nameSet == null |==> false
+2:LVR:0:POS:org.joda.time.tz.DefaultNameProvider@getShortName(java.util.Locale,java.lang.String,java.lang.String):44:0 |==> 1
+3:LVR:0:NEG:org.joda.time.tz.DefaultNameProvider@getShortName(java.util.Locale,java.lang.String,java.lang.String):44:0 |==> -1
+4:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getName(java.util.Locale,java.lang.String,java.lang.String):49:nameSet == null |==> false
+5:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getName(java.util.Locale,java.lang.String,java.lang.String):49:1 |==> 0
+6:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getName(java.util.Locale,java.lang.String,java.lang.String):49:1 |==> -1
+7:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null |==> false
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:id == null |==> false
+9:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null |==> locale == null != (id == null)
+10:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null |==> locale == null
+11:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null |==> id == null
+12:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null |==> true
+13:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:nameKey == null |==> false
+14:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null || nameKey == null |==> (locale == null || id == null) != (nameKey == null)
+15:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null || nameKey == null |==> locale == null || id == null
+16:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null || nameKey == null |==> nameKey == null
+17:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):53:locale == null || id == null || nameKey == null |==> true
+18:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):58:byIdCache == null |==> false
+19:STD:<CALL>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):59:iByLocaleCache.put(locale, byIdCache = createCache()) |==> <NO-OP>
+20:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):63:byNameKeyCache == null |==> false
+21:STD:<CALL>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):64:byIdCache.put(id, byNameKeyCache = createCache()) |==> <NO-OP>
+22:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null |==> true
+23:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:5 |==> 0
+24:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:5 |==> -5
+25:ROR:==(int,int):<=(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings.length == 5 |==> strings.length <= 5
+26:ROR:==(int,int):>=(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings.length == 5 |==> strings.length >= 5
+27:ROR:==(int,int):FALSE(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings.length == 5 |==> false
+28:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 |==> strings != null == (strings.length == 5)
+29:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 |==> false
+30:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 |==> strings != null
+31:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 |==> strings.length == 5
+32:LVR:0:POS:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:0 |==> 1
+33:LVR:0:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:0 |==> -1
+34:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 && id.equals(strings[0]) |==> (strings != null && strings.length == 5) == id.equals(strings[0])
+35:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 && id.equals(strings[0]) |==> false
+36:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 && id.equals(strings[0]) |==> strings != null && strings.length == 5
+37:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):69:strings != null && strings.length == 5 && id.equals(strings[0]) |==> id.equals(strings[0])
+38:STD:<ASSIGN>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):70:setEn = strings |==> <NO-OP>
+39:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null |==> true
+40:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:5 |==> 0
+41:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:5 |==> -5
+42:ROR:==(int,int):<=(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings.length == 5 |==> strings.length <= 5
+43:ROR:==(int,int):>=(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings.length == 5 |==> strings.length >= 5
+44:ROR:==(int,int):FALSE(int,int):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings.length == 5 |==> false
+45:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 |==> strings != null == (strings.length == 5)
+46:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 |==> false
+47:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 |==> strings != null
+48:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 |==> strings.length == 5
+49:LVR:0:POS:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:0 |==> 1
+50:LVR:0:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:0 |==> -1
+51:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 && id.equals(strings[0]) |==> (strings != null && strings.length == 5) == id.equals(strings[0])
+52:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 && id.equals(strings[0]) |==> false
+53:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 && id.equals(strings[0]) |==> strings != null && strings.length == 5
+54:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):77:strings != null && strings.length == 5 && id.equals(strings[0]) |==> id.equals(strings[0])
+55:STD:<ASSIGN>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):78:setLoc = strings |==> <NO-OP>
+56:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setEn != null |==> true
+57:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setLoc != null |==> true
+58:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setEn != null && setLoc != null |==> setEn != null == (setLoc != null)
+59:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setEn != null && setLoc != null |==> false
+60:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setEn != null && setLoc != null |==> setEn != null
+61:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):83:setEn != null && setLoc != null |==> setLoc != null
+62:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:2 |==> 0
+63:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:2 |==> -2
+64:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:2 |==> 0
+65:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:2 |==> -2
+66:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:1 |==> 0
+67:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:1 |==> -1
+68:STD:<CALL>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):84:byNameKeyCache.put(setEn[2], new String[]{setLoc[2], setLoc[1]}) |==> <NO-OP>
+69:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:2 |==> 0
+70:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:2 |==> -2
+71:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:4 |==> 0
+72:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:4 |==> -4
+73:COR:setEn[2].equals(setEn[4]):TRUE:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:setEn[2].equals(setEn[4]) |==> false
+74:COR:setEn[2].equals(setEn[4]):FALSE:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):88:setEn[2].equals(setEn[4]) |==> true
+75:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:4 |==> 0
+76:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:4 |==> -4
+77:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:4 |==> 0
+78:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:4 |==> -4
+79:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:3 |==> 0
+80:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:3 |==> -3
+81:STD:<CALL>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):89:byNameKeyCache.put(setEn[4] + "-Summer", new String[]{setLoc[4], setLoc[3]}) |==> <NO-OP>
+82:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:4 |==> 0
+83:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:4 |==> -4
+84:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:4 |==> 0
+85:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:4 |==> -4
+86:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:3 |==> 0
+87:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:3 |==> -3
+88:STD:<CALL>:<NO-OP>:org.joda.time.tz.DefaultNameProvider@getNameSet(java.util.Locale,java.lang.String,java.lang.String):91:byNameKeyCache.put(setEn[4], new String[]{setLoc[4], setLoc[3]}) |==> <NO-OP>
+89:LVR:POS:0:org.joda.time.tz.DefaultNameProvider@createCache():99:7 |==> 0
+90:LVR:POS:NEG:org.joda.time.tz.DefaultNameProvider@createCache():99:7 |==> -7

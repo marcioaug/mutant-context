@@ -1,0 +1,163 @@
+1:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@setMaxCostEval(int):48:this.maxCostEval = maxCostEval |==> <NO-OP>
+2:STD:<CALL>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():73:incrementJacobianEvaluationsCounter() |==> <NO-OP>
+3:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():74:0 |==> 1
+4:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():74:0 |==> -1
+5:STD:<CALL>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():74:Arrays.fill(jacobian, 0) |==> <NO-OP>
+6:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:0 |==> 1
+7:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:0 |==> -1
+8:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:0 |==> 1
+9:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:0 |==> -1
+10:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:i < rows |==> i != rows
+11:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:i < rows |==> i <= rows
+12:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():75:i < rows |==> false
+13:ORU:-(double):+(double):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():77:-Math.sqrt(wm.getWeight()) |==> +Math.sqrt(wm.getWeight())
+14:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():78:0 |==> 1
+15:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():78:0 |==> -1
+16:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():78:j < cols |==> j != cols
+17:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():78:j < cols |==> j <= cols
+18:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():78:j < cols |==> false
+19:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():79:factor * wm.getPartial(parameters[j]) |==> factor % wm.getPartial(parameters[j])
+20:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():79:factor * wm.getPartial(parameters[j]) |==> factor + wm.getPartial(parameters[j])
+21:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():79:factor * wm.getPartial(parameters[j]) |==> factor - wm.getPartial(parameters[j])
+22:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():79:factor * wm.getPartial(parameters[j]) |==> factor / wm.getPartial(parameters[j])
+23:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateJacobian():79:jacobian[index++] = factor * wm.getPartial(parameters[j]) |==> <NO-OP>
+24:STD:<INC>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@incrementJacobianEvaluationsCounter():88:++jacobianEvaluations |==> <NO-OP>
+25:ROR:>(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():99:++costEvaluations > maxCostEval |==> ++costEvaluations != maxCostEval
+26:ROR:>(int,int):>=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():99:++costEvaluations > maxCostEval |==> ++costEvaluations >= maxCostEval
+27:ROR:>(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():99:++costEvaluations > maxCostEval |==> false
+28:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():104:0 |==> 1
+29:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():104:0 |==> -1
+30:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():104:cost = 0 |==> <NO-OP>
+31:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:0 |==> 1
+32:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:0 |==> -1
+33:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:0 |==> 1
+34:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:0 |==> -1
+35:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:i < rows |==> i != rows
+36:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:i < rows |==> i <= rows
+37:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():105:i < rows |==> false
+38:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():108:Math.sqrt(wm.getWeight()) * residual |==> Math.sqrt(wm.getWeight()) % residual
+39:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():108:Math.sqrt(wm.getWeight()) * residual |==> Math.sqrt(wm.getWeight()) + residual
+40:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():108:Math.sqrt(wm.getWeight()) * residual |==> Math.sqrt(wm.getWeight()) - residual
+41:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():108:Math.sqrt(wm.getWeight()) * residual |==> Math.sqrt(wm.getWeight()) / residual
+42:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():108:residuals[i] = Math.sqrt(wm.getWeight()) * residual |==> <NO-OP>
+43:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual |==> wm.getWeight() % residual
+44:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual |==> wm.getWeight() + residual
+45:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual |==> wm.getWeight() - residual
+46:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual |==> wm.getWeight() / residual
+47:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual * residual |==> wm.getWeight() * residual % residual
+48:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual * residual |==> wm.getWeight() * residual + residual
+49:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual * residual |==> wm.getWeight() * residual - residual
+50:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:wm.getWeight() * residual * residual |==> wm.getWeight() * residual / residual
+51:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():109:cost += wm.getWeight() * residual * residual |==> <NO-OP>
+52:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@updateResidualsAndCost():111:cost = Math.sqrt(cost) |==> <NO-OP>
+53:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):128:0 |==> 1
+54:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):128:0 |==> -1
+55:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):129:0 |==> 1
+56:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):129:0 |==> -1
+57:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):129:i < wm.length |==> i != wm.length
+58:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):129:i < wm.length |==> i <= wm.length
+59:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):129:i < wm.length |==> false
+60:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual |==> wm[i].getWeight() % residual
+61:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual |==> wm[i].getWeight() + residual
+62:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual |==> wm[i].getWeight() - residual
+63:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual |==> wm[i].getWeight() / residual
+64:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual * residual |==> wm[i].getWeight() * residual % residual
+65:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual * residual |==> wm[i].getWeight() * residual + residual
+66:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual * residual |==> wm[i].getWeight() * residual - residual
+67:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:wm[i].getWeight() * residual * residual |==> wm[i].getWeight() * residual / residual
+68:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):131:criterion += wm[i].getWeight() * residual * residual |==> <NO-OP>
+69:AOR:/(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):133:criterion / wm.length |==> criterion % wm.length
+70:AOR:/(double,double):*(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):133:criterion / wm.length |==> criterion * wm.length
+71:AOR:/(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):133:criterion / wm.length |==> criterion + wm.length
+72:AOR:/(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getRMS(org.apache.commons.math.estimation.EstimationProblem):133:criterion / wm.length |==> criterion - wm.length
+73:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):143:0 |==> 1
+74:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):143:0 |==> -1
+75:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):144:0 |==> 1
+76:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):144:0 |==> -1
+77:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):144:i < wm.length |==> i != wm.length
+78:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):144:i < wm.length |==> i <= wm.length
+79:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):144:i < wm.length |==> false
+80:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual |==> residual % residual
+81:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual |==> residual + residual
+82:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual |==> residual - residual
+83:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual |==> residual / residual
+84:AOR:/(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual / wm[i].getWeight() |==> residual * residual % wm[i].getWeight()
+85:AOR:/(double,double):*(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual / wm[i].getWeight() |==> residual * residual * wm[i].getWeight()
+86:AOR:/(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual / wm[i].getWeight() |==> residual * residual + wm[i].getWeight()
+87:AOR:/(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:residual * residual / wm[i].getWeight() |==> residual * residual - wm[i].getWeight()
+88:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getChiSquare(org.apache.commons.math.estimation.EstimationProblem):146:chiSquare += residual * residual / wm[i].getWeight() |==> <NO-OP>
+89:STD:<CALL>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):162:updateJacobian() |==> <NO-OP>
+90:AOR:*(int,int):%(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):167:cols * rows |==> cols % rows
+91:AOR:*(int,int):+(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):167:cols * rows |==> cols + rows
+92:AOR:*(int,int):-(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):167:cols * rows |==> cols - rows
+93:AOR:*(int,int):/(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):167:cols * rows |==> cols / rows
+94:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):169:0 |==> 1
+95:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):169:0 |==> -1
+96:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):169:i < cols |==> i != cols
+97:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):169:i < cols |==> i <= cols
+98:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):169:i < cols |==> false
+99:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):170:j < cols |==> j != cols
+100:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):170:j < cols |==> j <= cols
+101:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):170:j < cols |==> false
+102:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):171:0 |==> 1
+103:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):171:0 |==> -1
+104:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):172:0 |==> 1
+105:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):172:0 |==> -1
+106:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):172:k < max |==> k != max
+107:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):172:k < max |==> k <= max
+108:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):172:k < max |==> false
+109:AOR:+(int,int):%(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + i |==> k % i
+110:AOR:+(int,int):*(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + i |==> k * i
+111:AOR:+(int,int):-(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + i |==> k - i
+112:AOR:+(int,int):/(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + i |==> k / i
+113:AOR:+(int,int):%(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + j |==> k % j
+114:AOR:+(int,int):*(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + j |==> k * j
+115:AOR:+(int,int):-(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + j |==> k - j
+116:AOR:+(int,int):/(int,int):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:k + j |==> k / j
+117:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:jacobian[k + i] * jacobian[k + j] |==> jacobian[k + i] % jacobian[k + j]
+118:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:jacobian[k + i] * jacobian[k + j] |==> jacobian[k + i] + jacobian[k + j]
+119:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:jacobian[k + i] * jacobian[k + j] |==> jacobian[k + i] - jacobian[k + j]
+120:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:jacobian[k + i] * jacobian[k + j] |==> jacobian[k + i] / jacobian[k + j]
+121:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):173:sum += jacobian[k + i] * jacobian[k + j] |==> <NO-OP>
+122:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):175:jTj[i][j] = sum |==> <NO-OP>
+123:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):176:jTj[j][i] = sum |==> <NO-OP>
+124:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):185:0 |==> 1
+125:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@getCovariances(org.apache.commons.math.estimation.EstimationProblem):185:0 |==> -1
+126:ROR:<=(int,int):<(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):203:m <= p |==> m < p
+127:ROR:<=(int,int):==(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):203:m <= p |==> m == p
+128:ROR:<=(int,int):TRUE(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):203:m <= p |==> true
+129:AOR:-(int,int):%(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:m - p |==> m % p
+130:AOR:-(int,int):*(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:m - p |==> m * p
+131:AOR:-(int,int):+(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:m - p |==> m + p
+132:AOR:-(int,int):/(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:m - p |==> m / p
+133:AOR:/(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:getChiSquare(problem) / (m - p) |==> getChiSquare(problem) % (m - p)
+134:AOR:/(double,double):*(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:getChiSquare(problem) / (m - p) |==> getChiSquare(problem) * (m - p)
+135:AOR:/(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:getChiSquare(problem) / (m - p) |==> getChiSquare(problem) + (m - p)
+136:AOR:/(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):208:getChiSquare(problem) / (m - p) |==> getChiSquare(problem) - (m - p)
+137:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):210:0 |==> 1
+138:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):210:0 |==> -1
+139:ROR:<(int,int):!=(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):210:i < errors.length |==> i != errors.length
+140:ROR:<(int,int):<=(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):210:i < errors.length |==> i <= errors.length
+141:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):210:i < errors.length |==> false
+142:AOR:*(double,double):%(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):211:Math.sqrt(covar[i][i]) * c |==> Math.sqrt(covar[i][i]) % c
+143:AOR:*(double,double):+(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):211:Math.sqrt(covar[i][i]) * c |==> Math.sqrt(covar[i][i]) + c
+144:AOR:*(double,double):-(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):211:Math.sqrt(covar[i][i]) * c |==> Math.sqrt(covar[i][i]) - c
+145:AOR:*(double,double):/(double,double):org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):211:Math.sqrt(covar[i][i]) * c |==> Math.sqrt(covar[i][i]) / c
+146:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@guessParametersErrors(org.apache.commons.math.estimation.EstimationProblem):211:errors[i] = Math.sqrt(covar[i][i]) * c |==> <NO-OP>
+147:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):226:0 |==> 1
+148:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):226:0 |==> -1
+149:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):226:costEvaluations = 0 |==> <NO-OP>
+150:LVR:0:POS:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):227:0 |==> 1
+151:LVR:0:NEG:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):227:0 |==> -1
+152:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):227:jacobianEvaluations = 0 |==> <NO-OP>
+153:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):230:measurements = problem.getMeasurements() |==> <NO-OP>
+154:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):231:parameters = problem.getUnboundParameters() |==> <NO-OP>
+155:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):234:rows = measurements.length |==> <NO-OP>
+156:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):235:cols = parameters.length |==> <NO-OP>
+157:AOR:*(int,int):%(int,int):org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):236:rows * cols |==> rows % cols
+158:AOR:*(int,int):+(int,int):org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):236:rows * cols |==> rows + cols
+159:AOR:*(int,int):-(int,int):org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):236:rows * cols |==> rows - cols
+160:AOR:*(int,int):/(int,int):org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):236:rows * cols |==> rows / cols
+161:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):236:jacobian = new double[rows * cols] |==> <NO-OP>
+162:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):237:residuals = new double[rows] |==> <NO-OP>
+163:STD:<ASSIGN>:<NO-OP>:org.apache.commons.math.estimation.AbstractEstimator@initializeEstimate(org.apache.commons.math.estimation.EstimationProblem):239:cost = Double.POSITIVE_INFINITY |==> <NO-OP>
