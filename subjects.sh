@@ -81,6 +81,12 @@ optimization()
         done
     fi
 
+    if [ -d "$WORKING_DIR/lib" ]; then
+        for jar in $(ls ${WORKING_DIR}/lib/)
+        do
+            PROJECT_CLASSPATH="${PROJECT_CLASSPATH}:$WORKING_DIR/lib/${jar}"
+        done
+    fi
 
     for mutant_dir in $(ls $1/mutants/)
     do
@@ -90,8 +96,17 @@ optimization()
             DEST_DIR=${TARGET%$(echo ${TARGET} | awk -F/ '{print $NF}')}
 
             javac -cp "${PROJECT_CLASSPATH}" "${TARGET}.java"
-            java -jar ${SOOT_JAR} -cp "${RT_JAR}:$1/mutants/${mutant_dir}:${PROJECT_CLASSPATH}" -d "${OPT_DIR}${mutant_dir}" -O "${class_modified////.}"
-        done
+
+            for class_compiled in $(ls ${TARGET%$(echo ${TARGET} | awk -F/ '{print $NF}')})
+            do
+                echo ${class_compiled}
+                if [ $(echo "$class_compiled" | awk -F . '{print $NF}') == "class" ]; then
+                    classO="${class_modified%$(echo "$class_modified" | awk -F / '{print $NF}')}${class_compiled}"
+                    classO=${classO%".class"}
+                    java -jar ${SOOT_JAR} -cp "${RT_JAR}:$1/mutants/${mutant_dir}:${PROJECT_CLASSPATH}" -d "${OPT_DIR}${mutant_dir}" -O "${classO////.}"
+                fi
+            done
+         done
     done
 
     echo "MutantNo,Status" >> "$1/tce.csv"
@@ -101,11 +116,21 @@ optimization()
         if [ "$mutant_dir" != "ORIGINAL" ]; then
             for class_modified in ${CLASS_MODIFIED_DIR}
             do
-                if diff "${OPT_DIR}ORIGINAL/${class_modified}.class" "${OPT_DIR}${mutant_dir}/${class_modified}.class" &> /dev/null ; then
-                    echo "${mutant_dir},TCE_CONFIRMED" >> "$1/tce.csv"
-                else
-                    echo "${mutant_dir},NOT_CONFIRMED" >> "$1/tce.csv"
-                fi
+                class_diff_path="${OPT_DIR}${mutant_dir}/${class_modified}"
+                class_diff_path=${class_diff_path%$(echo "$class_modified" | awk -F / '{print $NF}')}
+
+                STATUS="${mutant_dir},TCE_CONFIRMED"
+
+                for class_diff in $(ls ${class_diff_path})
+                do
+                    if [ $(echo "$class_diff" | awk -F . '{print $NF}') == "class" ]; then
+                        if ! diff "${OPT_DIR}ORIGINAL${class_diff_path}${class_diff}" "${OPT_DIR}${mutant_dir}${class_diff_path}${class_diff}" &> /dev/null ; then
+                            STATUS="${mutant_dir},NOT_CONFIRMED"
+                        fi
+                    fi
+                done
+
+                echo "${STATUS}" >> "$1/tce.csv"
             done
         fi
     done
