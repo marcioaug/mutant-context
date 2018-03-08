@@ -1,8 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.math.optimization.fitting.CurveFitterTest
-2,org.apache.commons.math.optimization.fitting.ParametricGaussianFunctionTest
-3,org.apache.commons.math.optimization.fitting.HarmonicFitterTest
-4,org.apache.commons.math.optimization.fitting.GaussianFitterTest
-5,org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest
-6,org.apache.commons.math.optimization.fitting.PolynomialFitterTest
-7,org.apache.commons.math.optimization.general.MinpackTest

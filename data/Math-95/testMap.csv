@@ -1,4 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.math.stat.inference.OneWayAnovaTest
-2,org.apache.commons.math.distribution.FDistributionTest
-3,org.apache.commons.math.stat.inference.TestUtilsTest

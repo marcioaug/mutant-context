@@ -1,6 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.SpecializeModuleTest$SpecializeModuleSpecializationStateTest
-2,com.google.javascript.jscomp.CrossModuleMethodMotionTest
-3,com.google.javascript.jscomp.SpecializeModuleTest
-4,com.google.javascript.jscomp.RemoveUnusedPrototypePropertiesTest
-5,com.google.javascript.jscomp.CommandLineRunnerTest

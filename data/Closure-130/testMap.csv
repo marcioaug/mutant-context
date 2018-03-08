@@ -1,6 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.NormalizeTest
-2,com.google.javascript.jscomp.ReplaceStringsTest
-3,com.google.javascript.jscomp.CollapsePropertiesTest
-4,com.google.javascript.jscomp.IntegrationTest
-5,com.google.javascript.jscomp.CommandLineRunnerTest

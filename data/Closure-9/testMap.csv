@@ -1,4 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.ProcessCommonJSModulesTest
-2,com.google.javascript.jscomp.CompilerTest
-3,com.google.javascript.jscomp.CommandLineRunnerTest

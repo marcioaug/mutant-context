@@ -1,6 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.VariableReferenceCheckTest
-2,com.google.javascript.jscomp.InlineVariablesConstantsTest
-3,com.google.javascript.jscomp.InlineVariablesTest
-4,com.google.javascript.jscomp.CollapsePropertiesTest
-5,com.google.javascript.jscomp.CommandLineRunnerTest

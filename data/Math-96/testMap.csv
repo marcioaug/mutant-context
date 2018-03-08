@@ -1,9 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.math.complex.ComplexUtilsTest
-2,org.apache.commons.math.transform.FastCosineTransformerTest
-3,org.apache.commons.math.analysis.LaguerreSolverTest
-4,org.apache.commons.math.transform.FastSineTransformerTest
-5,org.apache.commons.math.transform.FastFourierTransformerTest
-6,org.apache.commons.math.complex.FrenchComplexFormatTest
-7,org.apache.commons.math.complex.ComplexFormatTest
-8,org.apache.commons.math.complex.ComplexTest

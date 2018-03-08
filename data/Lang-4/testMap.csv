@@ -1,5 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.lang3.text.translate.LookupTranslatorTest
-2,org.apache.commons.lang3.reflect.TypeUtilsTest
-3,org.apache.commons.lang3.StringUtilsTest
-4,org.apache.commons.lang3.StringEscapeUtilsTest

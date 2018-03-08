@@ -1,4 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.math.estimation.GaussNewtonEstimatorTest
-2,org.apache.commons.math.estimation.LevenbergMarquardtEstimatorTest
-3,org.apache.commons.math.estimation.MinpackTest

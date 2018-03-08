@@ -1,5 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.lang.text.StrBuilderAppendInsertTest
-2,org.apache.commons.lang.text.StrSubstitutorTest
-3,org.apache.commons.lang.text.StrTokenizerTest
-4,org.apache.commons.lang.text.StrBuilderTest

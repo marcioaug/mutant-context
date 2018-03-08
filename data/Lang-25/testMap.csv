@@ -1,4 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.lang3.text.translate.EntityArraysTest
-2,org.apache.commons.lang3.reflect.TypeUtilsTest
-3,org.apache.commons.lang3.StringEscapeUtilsTest
