@@ -119,12 +119,15 @@ optimization()
                 class_diff_path="${OPT_DIR}${mutant_dir}/${class_modified}"
                 class_diff_path=${class_diff_path%$(echo "$class_modified" | awk -F / '{print $NF}')}
 
+                class_diff_path_ori="${OPT_DIR}ORIGINAL/${class_modified}"
+                class_diff_path_ori=${class_diff_path_ori%$(echo "$class_modified" | awk -F / '{print $NF}')}
+                
                 STATUS="${mutant_dir},TCE_CONFIRMED"
 
                 for class_diff in $(ls ${class_diff_path})
                 do
                     if [ $(echo "$class_diff" | awk -F . '{print $NF}') == "class" ]; then
-                        if ! diff "${OPT_DIR}ORIGINAL${class_diff_path}${class_diff}" "${OPT_DIR}${mutant_dir}${class_diff_path}${class_diff}" &> /dev/null ; then
+                        if ! diff "${class_diff_path_ori}${class_diff}" "${class_diff_path}${class_diff}" &> /dev/null ; then
                             STATUS="${mutant_dir},NOT_CONFIRMED"
                         fi
                     fi
