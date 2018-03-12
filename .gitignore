@@ -1,4 +1,5 @@
 .idea/
 subjects/*
+data/*
 .nohup.out
 nohup.out
