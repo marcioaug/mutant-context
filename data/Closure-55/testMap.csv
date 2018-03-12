@@ -1,3 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.FunctionRewriterTest
-2,com.google.javascript.jscomp.CommandLineRunnerTest

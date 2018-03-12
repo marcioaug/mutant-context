@@ -1,4 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.lang.EntitiesTest
-2,org.apache.commons.lang.StringEscapeUtilsTest
-3,org.apache.commons.lang.EntitiesPerformanceTest

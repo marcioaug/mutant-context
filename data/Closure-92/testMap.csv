@@ -1,7 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.RenameVarsTest
-2,com.google.javascript.jscomp.CheckRequiresForConstructorsTest
-3,com.google.javascript.jscomp.ProcessClosurePrimitivesTest
-4,com.google.javascript.jscomp.CommandLineRunnerTest
-5,com.google.javascript.jscomp.TypeCheckTest
-6,com.google.javascript.jscomp.LooseTypeCheckTest

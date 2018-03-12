@@ -1,8 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest
-2,com.google.javascript.jscomp.SymbolTableTest
-3,com.google.javascript.jscomp.TypeInferenceTest
-4,com.google.javascript.jscomp.IntegrationTest
-5,com.google.javascript.jscomp.CommandLineRunnerTest
-6,com.google.javascript.jscomp.LooseTypeCheckTest
-7,com.google.javascript.jscomp.TypeCheckTest

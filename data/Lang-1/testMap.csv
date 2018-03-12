@@ -1,5 +1,0 @@
-TestNo,TestName
-1,org.apache.commons.lang3.reflect.ConstructorUtilsTest
-2,org.apache.commons.lang3.reflect.MethodUtilsTest
-3,org.apache.commons.lang3.BooleanUtilsTest
-4,org.apache.commons.lang3.math.NumberUtilsTest

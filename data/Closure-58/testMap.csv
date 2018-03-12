@@ -1,6 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.CompilerTest
-2,com.google.javascript.jscomp.LiveVariableAnalysisTest
-3,com.google.javascript.jscomp.CoalesceVariableNamesTest
-4,com.google.javascript.jscomp.DeadAssignmentsEliminationTest
-5,com.google.javascript.jscomp.CommandLineRunnerTest

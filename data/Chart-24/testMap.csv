@@ -1,4 +1,0 @@
-TestNo,TestName
-1,org.jfree.chart.renderer.junit.GrayPaintScaleTests
-2,org.jfree.chart.renderer.xy.junit.XYBlockRendererTests
-3,org.jfree.chart.title.junit.PaintScaleLegendTests

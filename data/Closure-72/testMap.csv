@@ -1,7 +1,0 @@
-TestNo,TestName
-1,com.google.javascript.jscomp.jsonml.SecureCompilerTest
-2,com.google.javascript.jscomp.FunctionToBlockMutatorTest
-3,com.google.javascript.jscomp.RenameLabelsTest
-4,com.google.javascript.jscomp.FunctionInjectorTest
-5,com.google.javascript.jscomp.InlineFunctionsTest
-6,com.google.javascript.jscomp.CommandLineRunnerTest
